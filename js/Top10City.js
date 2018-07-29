@@ -89,6 +89,7 @@ d3.csv("/d3-finalproject/data/top10cities.csv", function(d, i, columns) {
 			.attr("transform", "translate(0," + 445 + ")")
 			.call(d3.axisBottom(x1))
 			.selectAll("text");
+	
 	//y-axis
 	  g1.append("g")
 			.attr("class", "axis")
