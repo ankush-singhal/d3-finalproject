@@ -66,7 +66,7 @@ var stackData1 = d3.stack().keys(keys)(data);
 	
 		tooltip
 		.style("left", d3.event.pageX - 50 + "px")
-                .style("top", d3.event.pageY - 120 + "px")
+                .style("top", d3.event.pageY - 150 + "px")
 	  	.style("display", "inline-block")
 		.html("Employer Name: <b>"+d.data.employer+"</b>"+ "<br>" + "Number of Employees: " +"<b>"+(d[1]-d[0]));    			
 		})
@@ -120,14 +120,14 @@ var stackData1 = d3.stack().keys(keys)(data);
 		.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
   legend.append("rect")
-		.attr("x", width + 180)
+		.attr("x", width + 170)
 		.attr("width", 19)
 		.attr("height", 19)
 		.attr("fill", z)
 		.attr("stroke", "black");
 
   legend.append("text")
-		.attr("x", width+ 205)
+		.attr("x", width+ 295)
 		.attr("y", 9.5)
 		.attr("dy", "0.32em")
 		.text(function(d) { return d; });
