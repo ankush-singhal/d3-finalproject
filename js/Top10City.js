@@ -130,7 +130,7 @@ d3.csv("/d3-finalproject/data/top10cities.csv", function(d, i, columns) {
     label = g1.selectAll(".label");
 });
 
-d3.selectAll("div#vis1 input")
+d3.selectAll("input[name=mode]")
     .on("change", changed);
 
 function changed() {
