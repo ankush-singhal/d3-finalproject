@@ -101,6 +101,7 @@ d3.csv("/d3-finalproject/data/top10cities.csv", function(d, i, columns) {
         		.attr("dy", "0.71em")
         		.attr("text-anchor", "center")
 			.attr("fill", "black")
+			.attr("font-weight", "bold")
 			.text("No. of Employees - (K)");
 	
 	
