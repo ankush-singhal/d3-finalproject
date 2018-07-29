@@ -6,7 +6,7 @@ var svg = d3.select("div#vis2")
   .attr("viewBox", "0 0 960 500")
   .classed("svg-content", true);
 
-var width = 960 - margin.left - margin.right;
+var width = 990 - margin.left - margin.right;
 var   height = 460 - margin.top - margin.bottom;
 
 var g = svg.append("g")
@@ -15,7 +15,7 @@ var g = svg.append("g")
 var tooltip = d3.select("div#vis2").append("div").attr("class", "tooltip");
 
 var x = d3.scaleBand()
-    .rangeRound([0, width + 20])
+    .rangeRound([0, width])
 	 .padding(0.08);
 
 var y = d3.scaleLinear()
