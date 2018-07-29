@@ -7,7 +7,7 @@ var svg = d3.select("div#vis2")
   .classed("svg-content", true);
 
 var width = 960 - margin.left - margin.right;
-var   height = 500 - margin.top - margin.bottom;
+var   height = 480 - margin.top - margin.bottom;
 
 var g = svg.append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -118,14 +118,14 @@ var stackData1 = d3.stack().keys(keys)(data);
 		.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
   legend.append("rect")
-		.attr("x", width - 25)
+		.attr("x", width + 225)
 		.attr("width", 19)
 		.attr("height", 19)
 		.attr("fill", z)
 		.attr("stroke", "black");
 
   legend.append("text")
-		.attr("x", width)
+		.attr("x", width+ 200)
 		.attr("y", 9.5)
 		.attr("dy", "0.32em")
 		.text(function(d) { return d; });
