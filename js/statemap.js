@@ -1,6 +1,6 @@
 var margin1 = {top: 20, right: 50, bottom: 25, left: 160};
 
-var width1 = 1200 - margin1.left - margin1.right,
+var width1 = 1000 - margin1.left - margin1.right,
     height1 = 700 - margin1.top - margin1.bottom;
 
 var svg2 = d3.select("div#vis3")
