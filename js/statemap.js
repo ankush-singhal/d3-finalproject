@@ -1,4 +1,4 @@
-var margin2 = {top: 20, right: 30, bottom: 25, left: 160};
+var margin2 = {top: 20, right: 160, bottom: 25, left: 30};
 
 var width2 = 1200 - margin2.left - margin2.right,
     height2 = 700 - margin2.top - margin2.bottom;
@@ -30,7 +30,7 @@ var color = d3.scaleThreshold()
 //Adding legend for our Choropleth
 var ext_color_domain = [5000,15000,25000,50000,75000,100000]
 var legend_labels = ["< 500", "500 - 1k", "1k - 5k", "5k - 15k", "15k - 25k","25k - 50k"]
-  var legend1 = svg2.selectAll("g.legend")
+  var legend2 = svg2.selectAll("g.legend")
   .data(ext_color_domain)
   .enter().append("g")
   .attr("class", "legend");
