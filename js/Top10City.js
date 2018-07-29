@@ -3,11 +3,11 @@ var margin1 = {top: 10, right: 50, bottom: 15, left: 250};
 var svg1 = d3.select("div#vis1")
   .append("svg")
   .attr("preserveAspectRatio", "xMinYMin meet")
-  .attr("viewBox", "0 0 960 480")
+  .attr("viewBox", "0 0 960 460")
   .classed("svg-content", true);
 
  var width1 = 960 - margin1.left - margin1.right;
- var height1 = 480 - margin1.top - margin1.bottom;
+ var height1 = 460 - margin1.top - margin1.bottom;
   
 var g1 = svg1.append("g")
   .attr("transform", "translate(" + margin1.left + "," + margin1.top + ")");
