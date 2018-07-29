@@ -36,8 +36,8 @@ var legend_labels = ["< 500", "500 - 1k", "1k - 5k", "5k - 15k", "15k - 25k","25
   .attr("class", "legend");
   var ls_w = 20, ls_h = 20;
   legend2.append("rect")
-  .attr("x", 870)
-  .attr("y", function(d, i){ return 450 - (i*ls_h) - 2*ls_h;})
+  .attr("x", 880)
+  .attr("y", function(d, i){ return 350 - (i*ls_h) - 2*ls_h;})
   .attr("width", ls_w)
   .attr("height", ls_h)
   .style("fill", function(d, i) { return color(d); })
@@ -45,8 +45,8 @@ var legend_labels = ["< 500", "500 - 1k", "1k - 5k", "5k - 15k", "15k - 25k","25
   .style("stroke", "black")
   .style("stroke-width", 1);
   legend2.append("text")
-  .attr("x", 880)
-  .attr("y", function(d, i){ return 430 - (i*ls_h) - ls_h - 4;})
+  .attr("x", 900)
+  .attr("y", function(d, i){ return 350 - (i*ls_h) - ls_h - 4;})
   .text(function(d, i){ return legend_labels[i]; });
   
   legend2.append("text")
