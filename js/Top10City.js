@@ -130,8 +130,8 @@ d3.csv("/d3-finalproject/data/top10cities.csv", function(d, i, columns) {
     label = g1.selectAll(".label");
 });
 
-/*d3.selectAll("div#vis1 input")
-    .on("change", changed);*/
+d3.selectAll("div#vis1 input")
+    .on("change", changed);
 
 function changed() {
     if (this.value === "stacked") transitionStep1();
