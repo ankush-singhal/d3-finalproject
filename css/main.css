@@ -1,0 +1,83 @@
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+    //transform: translateX(25%);
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.axis .domain {
+  display: none;
+}
+
+rect:hover {
+  fill-opacity:0.5;
+}
+
+.tooltip {
+  position: absolute;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #000000;
+  padding: 14px;
+  text-align: left;
+  border-radius:5px;
+}
+
+.state{
+		fill: none;
+		stroke: #a9a9a9;
+		stroke-width: 1;
+	}
+	.state:hover{
+		fill-opacity:0.5;
+	}
+	#tooltipmap {   
+		position: absolute;           
+		text-align: left;
+		padding: 20px;             
+		margin: 10px;
+		font: 12px sans-serif;        
+		background: lightsteelblue;   
+		border: 1px;      
+		border-radius: 2px;           
+		pointer-events: none;         
+	}
+	#tooltipmap h4{
+		margin:0;
+		font-size:14px;
+	}
+	#tooltipmap{
+		background: none repeat scroll 0 0 #ffffff;
+		border:1px solid grey;
+		border-radius:5px;
+		font-size:12px;
+		width:auto;
+		padding:4px;
+		color:#000000;
+		opacity:0;
+	}
+	#tooltipmap table{
+		table-layout:fixed;
+	}
+	#tooltipmap tr td{
+		padding:0;
+		margin:0;
+	}
+	#tooltipmap tr td:nth-child(1){
+		min-width:120px;
+	}
+	#tooltipmap tr td:nth-child(2){
+		text-align:left;
+	}
