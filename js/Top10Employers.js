@@ -134,7 +134,7 @@ var stackData1 = d3.stack().keys(keys)(data);
     label2 = g.selectAll(".label");
 });
 
-d3.selectAll("input")
+d3.selectAll("input[name=mode1]")
     .on("change", changed);
 
 function changed() {
