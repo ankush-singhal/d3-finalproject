@@ -114,14 +114,14 @@ d3.csv("/d3-finalproject/data/top10cities.csv", function(d, i, columns) {
 		.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
 	legend1.append("rect")
-		.attr("x", width1 - 270)
+		.attr("x", width1 + 170)
 		.attr("width", 19)
 		.attr("height", 19)
 		.attr("fill", z)
 		.attr("stroke", "black");
 
 	legend1.append("text")
-		.attr("x", width1 - 245)
+		.attr("x", width1 + 195)
 		.attr("y", 9.5)
 		.attr("dy", "0.32em")
 		.text(function(d) { return d; });
