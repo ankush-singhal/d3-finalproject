@@ -1,12 +1,12 @@
-var margin1 = {top: 20, right: 50, bottom: 25, left: 160};
+var margin2 = {top: 20, right: 30, bottom: 25, left: 160};
 
-var width1 = 1000 - margin1.left - margin1.right,
-    height1 = 700 - margin1.top - margin1.bottom;
+var width2 = 1200 - margin1.left - margin1.right,
+    height2 = 700 - margin1.top - margin1.bottom;
 
 var svg2 = d3.select("div#vis3")
   .append("svg")
-  .attr("width", width1 + margin1.left + margin1.right)
-  .attr("height", height1 + margin1.top + margin1.bottom)
+  .attr("width", width2 + margin2.left + margin2.right)
+  .attr("height", height2 + margin2.top + margin2.bottom)
   .append("g");
   
 function tooltipHtml(n, d){	/* function to create html content string in tooltip div. */
@@ -35,7 +35,7 @@ var legend_labels = ["< 500", "500 - 1k", "1k - 5k", "5k - 15k", "15k - 25k","25
   .enter().append("g")
   .attr("class", "legend");
   var ls_w = 20, ls_h = 20;
-  legend1.append("rect")
+  legend2.append("rect")
   .attr("x", 870)
   .attr("y", function(d, i){ return 450 - (i*ls_h) - 2*ls_h;})
   .attr("width", ls_w)
@@ -44,12 +44,12 @@ var legend_labels = ["< 500", "500 - 1k", "1k - 5k", "5k - 15k", "15k - 25k","25
   .style("opacity", 0.9)
   .style("stroke", "black")
   .style("stroke-width", 1);
-  legend1.append("text")
+  legend2.append("text")
   .attr("x", 895)
   .attr("y", function(d, i){ return 450 - (i*ls_h) - ls_h - 4;})
   .text(function(d, i){ return legend_labels[i]; });
   
-  legend1.append("text")
+  legend2.append("text")
   .attr("x", 880)
   .attr("y", function(d, i){ return 450 - (10*ls_h) - ls_h - 4;})
   .text("Number of PERM Application");
