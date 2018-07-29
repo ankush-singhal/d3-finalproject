@@ -15,8 +15,9 @@
     left: 0;
 }
 
-#bar_text {
-	margin-left: 275px;	
+#bar_text form{
+	margin-left: 275px;
+	margin-top:25px;
 	}
 
 .axis .domain {
