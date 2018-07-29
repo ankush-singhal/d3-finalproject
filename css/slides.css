@@ -85,13 +85,13 @@ p {
   position: absolute;
   top: 15%;
   transform: translateX(25%);
-}*/
+}
 
 #map_content {
   position: absolute;
   top: 15%;
   transform: translateX(15%);
-}
+}*/
 
 #hbar_container, #vbar_container, #map_container {
   width: 1024px;
@@ -100,14 +100,14 @@ p {
   float: left;
   width: 60%;
 }
-#hbar_text, #vbar_text, #map_text {
+#bar_text, #bar_text, #map_text {
   margin: 30px;
   left: 5%;
   padding: 10px;
   float: left;
   width: 20%;
   background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
-  background: rgba(255, 255, 255, 0.7);	  
+  background: rgba(255, 255, 255, 0.7); 	
 }
 
 
