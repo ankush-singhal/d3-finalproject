@@ -62,7 +62,7 @@ d3.csv("/CS498FinalTermProject-PERMAnalysis/data/top10cities.csv", function(d, i
   	.on("mousemove", function(d) {
 		tooltip1
 		.style("left", d3.event.pageX - 50 + "px")
-         	.style("top", d3.event.pageY - 250 + "px")
+         	.style("top", d3.event.pageY - 225 + "px")
 	  	.style("display", "inline-block")
 		.html("City Name: <b>"+d.data.city+"</b>"+ "<br>" + "Number of Employees: " +"<b>"+(d[1]-d[0]));    			
 		})
