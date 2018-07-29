@@ -12,7 +12,7 @@ var svg1 = d3.select("div#vis1")
 var g1 = svg1.append("g")
   .attr("transform", "translate(" + margin1.left + "," + margin1.top + ")");
 
-var tooltip1 = d3.select("div#vis1").append("div").attr("class", "tooltip")
+var tooltip1 = d3.select("div#vis1").append("div").attr("class", "tooltip");
 
 var x1 = d3.scaleBand()
     .rangeRound([0, width1])
@@ -82,21 +82,13 @@ d3.csv("/d3-finalproject/data/top10cities.csv", function(d, i, columns) {
     	.text(function(d){return (d[1] - d[0]) ;})
 	.attr("fill", "#000")
 	.attr("font-weight", "bold");
+	
 	//x-axis
 	 g1.append("g")
 			.attr("class", "axis")
 			.attr("transform", "translate(0," + 445 + ")")
 			.call(d3.axisBottom(x1))
-			.selectAll("text")
-			.append("text")			
-			.attr("x", 300)
-			.attr("y", 0)
-			.attr("dx", "0.32em")
-			.attr("fill", "#000")
-			.attr("font-weight", "bold")
-			.attr("text-anchor", "center")
-			.attr("fill", "black")
-			.text("City Name");
+			.selectAll("text");
 	//y-axis
 	  g1.append("g")
 			.attr("class", "axis")
@@ -108,12 +100,6 @@ d3.csv("/d3-finalproject/data/top10cities.csv", function(d, i, columns) {
         		.attr("dy", "0.71em")
         		.attr("text-anchor", "center")
 			.attr("fill", "black")
-			/*.attr("x", 2)
-			.attr("y", y1(y1.ticks().pop()) + 0.5)
-			.attr("dy", "0.32em")
-			.attr("fill", "#000")
-			.attr("font-weight", "bold")
-			.attr("text-anchor", "start")*/
 			.text("No. of Employees - (K)");
 	
 	
