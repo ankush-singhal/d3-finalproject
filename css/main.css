@@ -15,6 +15,11 @@
     left: 0;
 }
 
+#bar_text {
+	margin-top: 25px;
+	margin-left: 250px;	
+	}
+
 .axis .domain {
   display: none;
 }
