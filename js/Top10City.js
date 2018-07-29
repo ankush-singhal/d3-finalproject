@@ -26,7 +26,7 @@ var z = d3.scaleOrdinal()
 
 var keys;
 
-d3.csv("/CS498FinalTermProject-PERMAnalysis/data/top10cities.csv", function(d, i, columns) {
+d3.csv("/d3-finalproject/data/top10cities.csv", function(d, i, columns) {
     for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
     d.total = t;
     return d;
