@@ -3,11 +3,11 @@ var margin = {top: 20, right: 50, bottom: 25, left: 250};
 var svg = d3.select("div#vis2")
   .append("svg")
   .attr("preserveAspectRatio", "xMinYMin meet")
-  .attr("viewBox", "0 0 960 500")
+  .attr("viewBox", "0 0 1000 500")
   .classed("svg-content", true);
 
-var width = 990 - margin.left - margin.right;
-var   height = 460 - margin.top - margin.bottom;
+var width = 1000 - margin.left - margin.right;
+var height = 460 - margin.top - margin.bottom;
 
 var g = svg.append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -120,14 +120,14 @@ var stackData1 = d3.stack().keys(keys)(data);
 		.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
   legend.append("rect")
-		.attr("x", width + 170)
+		.attr("x", width + 130)
 		.attr("width", 19)
 		.attr("height", 19)
 		.attr("fill", z)
 		.attr("stroke", "black");
 
   legend.append("text")
-		.attr("x", width+ 195)
+		.attr("x", width+ 155)
 		.attr("y", 9.5)
 		.attr("dy", "0.32em")
 		.text(function(d) { return d; });
