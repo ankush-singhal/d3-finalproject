@@ -1,4 +1,4 @@
-var margin1 = {top: 20, right: 160, bottom: 35, left: 100};
+var margin1 = {top: 30, right: 160, bottom: 50, left: 200};
 
 var svg1 = d3.select("div#vis1")
   .append("svg")
