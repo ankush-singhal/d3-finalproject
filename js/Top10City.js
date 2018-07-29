@@ -62,7 +62,7 @@ d3.csv("/d3-finalproject/data/top10cities.csv", function(d, i, columns) {
   	.on("mousemove", function(d) {
 		tooltip1
 		.style("left", d3.event.pageX - 50 + "px")
-         	.style("top", d3.event.pageY - 70 + "px")
+         	.style("top", d3.event.pageY - 120 + "px")
 	  	.style("display", "inline-block")
 		.html("City Name: <b>"+d.data.city+"</b>"+ "<br>" + "Number of Employees: " +"<b>"+(d[1]-d[0]));    			
 		})
