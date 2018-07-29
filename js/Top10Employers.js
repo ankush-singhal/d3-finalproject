@@ -94,19 +94,8 @@ var stackData1 = d3.stack().keys(keys)(data);
 		.attr("class", "axis")
 		.attr("transform", "translate(0," + height + ")")
 		.call(d3.axisBottom(x))
-		.selectAll("text")  
-
-
-
-
-
-
-
-
-
-
-          	
-		.call(wrap,x.bandwidth());
+		.selectAll("text")
+	        .call(wrap,x.bandwidth());
 
   g.append("g")
 		.attr("class", "axis")
@@ -134,7 +123,7 @@ var stackData1 = d3.stack().keys(keys)(data);
 		.attr("x", width - 270)
 		.attr("width", 19)
 		.attr("height", 19)
-		.attr("fill", z);
+		.attr("fill", z)
 		.attr("stroke", "black");
 
   legend.append("text")
