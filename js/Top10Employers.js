@@ -1,7 +1,5 @@
 var margin = {top: 20, right: 50, bottom: 25, left: 250};
 
-
-
 var svg = d3.select("div#vis2")
   .append("svg")
   .attr("preserveAspectRatio", "xMinYMin meet")
@@ -110,7 +108,7 @@ var stackData1 = d3.stack().keys(keys)(data);
 		.text("No. of Employees - (K)");
 
 
-  var legend = svg1.selectAll(".legend")
+  var legend = svg.selectAll(".legend")
 		.attr("font-family", "sans-serif")
 		.attr("font-size", 10)
 		.attr("text-anchor", "end")
@@ -132,8 +130,8 @@ var stackData1 = d3.stack().keys(keys)(data);
 		.attr("dy", "0.32em")
 		.text(function(d) { return d; });
 
-	rect = g.selectAll("rect");
-    label = g.selectAll(".label");
+	rect2 = g.selectAll("rect");
+    label2 = g.selectAll(".label");
 });
 
 d3.selectAll("input")
@@ -145,12 +143,12 @@ function changed() {
 }
 
 function transitionStep11() {
-    rect.transition()
+    rect2.transition()
     .attr("y", function(d) { return y(d[1]); })
     .attr("x", function(d) { return x(d.data.city); })
     .attr("width", x.bandwidth());
    
-     label.transition()
+     label2.transition()
     .attr("x", function(d) { return x(d.data.city)+ 10; })
     .attr("y",function(d) { return y(d[1]); });
 }
