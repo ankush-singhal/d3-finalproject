@@ -145,23 +145,23 @@ function changed() {
 function transitionStep11() {
     rect2.transition()
     .attr("y", function(d) { return y(d[1]); })
-    .attr("x", function(d) { return x(d.data.city); })
+    .attr("x", function(d) { return x(d.data.employer); })
     .attr("width", x.bandwidth());
    
      label2.transition()
-    .attr("x", function(d) { return x(d.data.city)+ 10; })
+    .attr("x", function(d) { return x(d.data.employer)+ 10; })
     .attr("y",function(d) { return y(d[1]); });
 }
 
 function transitionStep22() {
 	
    rect2.transition()
-    .attr("x", function(d, i) { return x(d.data.city) + x.bandwidth() / (keys.length+1) * d.keyIdx; })
+    .attr("x", function(d, i) { return x(d.data.employer) + x.bandwidth() / (keys.length+1) * d.keyIdx; })
     .attr("width", x.bandwidth() / (keys.length+1))
     .attr("y", function(d) { return y(d[1] - d[0]); });
 	
   label2.transition()
-    .attr("x", function(d, i) { return x(d.data.city) + x.bandwidth() / (keys.length+1) * d.keyIdx; })     
+    .attr("x", function(d, i) { return x(d.data.employer) + x.bandwidth() / (keys.length+1) * d.keyIdx; })     
     .attr("y", function(d) { return y(d[1] - d[0]); });
 
 }
