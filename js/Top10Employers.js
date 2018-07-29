@@ -155,12 +155,12 @@ function transitionStep11() {
 
 function transitionStep22() {
 	
-   rect.transition()
+   rect2.transition()
     .attr("x", function(d, i) { return x(d.data.city) + x.bandwidth() / (keys.length+1) * d.keyIdx; })
     .attr("width", x.bandwidth() / (keys.length+1))
     .attr("y", function(d) { return y(d[1] - d[0]); });
 	
-  label.transition()
+  label2.transition()
     .attr("x", function(d, i) { return x(d.data.city) + x.bandwidth() / (keys.length+1) * d.keyIdx; })     
     .attr("y", function(d) { return y(d[1] - d[0]); });
 
