@@ -155,7 +155,7 @@ function transitionStep11() {
     .attr("y",function(d) { return y(d[1]); });
 }
 
-function transitionStep12() {
+function transitionStep22() {
 	
    rect.transition()
     .attr("x", function(d, i) { return x(d.data.city) + x.bandwidth() / (keys.length+1) * d.keyIdx; })
