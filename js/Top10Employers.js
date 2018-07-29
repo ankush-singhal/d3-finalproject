@@ -15,7 +15,7 @@ var g = svg.append("g")
 var tooltip = d3.select("div#vis2").append("div").attr("class", "tooltip");
 
 var x = d3.scaleBand()
-    .rangeRound([0, width])
+    .rangeRound([0, width + 20])
 	 .padding(0.08);
 
 var y = d3.scaleLinear()
