@@ -1,4 +1,4 @@
-var margin = {top: 20, right: 50, bottom: 45, left: 250};
+var margin = {top: 20, right: 50, bottom: 25, left: 250};
 
 var svg = d3.select("div#vis2")
   .append("svg")
@@ -118,14 +118,14 @@ var stackData1 = d3.stack().keys(keys)(data);
 		.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
   legend.append("rect")
-		.attr("x", width - 470)
+		.attr("x", width - 70)
 		.attr("width", 19)
 		.attr("height", 19)
 		.attr("fill", z)
 		.attr("stroke", "black");
 
   legend.append("text")
-		.attr("x", width - 445)
+		.attr("x", width - 45)
 		.attr("y", 9.5)
 		.attr("dy", "0.32em")
 		.text(function(d) { return d; });
