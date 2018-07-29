@@ -91,8 +91,9 @@ var stackData1 = d3.stack().keys(keys)(data);
   g.append("g")
 		.attr("class", "axis")
 		.attr("transform", "translate(0," + height + ")")
+		.attr("font-size", 6)
 		.call(d3.axisBottom(x))
-		.selectAll("text")
+		.selectAll("text")	
 	        .call(wrap,x.bandwidth());
 
   g.append("g")
@@ -105,7 +106,8 @@ var stackData1 = d3.stack().keys(keys)(data);
         		.attr("dy", "0.71em")
         		.attr("text-anchor", "center")
 			.attr("fill", "black")
-		.text("No. of Employees - (K)");
+			.attr("font-weight", "bold")
+		        .text("No. of Employees - (K)");
 
 
   var legend = svg.selectAll(".legend")
@@ -118,14 +120,14 @@ var stackData1 = d3.stack().keys(keys)(data);
 		.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
   legend.append("rect")
-		.attr("x", width + 225)
+		.attr("x", width + 200)
 		.attr("width", 19)
 		.attr("height", 19)
 		.attr("fill", z)
 		.attr("stroke", "black");
 
   legend.append("text")
-		.attr("x", width+ 200)
+		.attr("x", width+ 225)
 		.attr("y", 9.5)
 		.attr("dy", "0.32em")
 		.text(function(d) { return d; });
