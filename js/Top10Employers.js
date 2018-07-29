@@ -65,8 +65,8 @@ var stackData1 = d3.stack().keys(keys)(data);
 
 	
 		tooltip
-		.style("left", d3.event.pageX - 50 + "px")
-                .style("top", d3.event.pageY - 100 + "px")
+		.style("left", d3.event.pageX - 500 + "px")
+                .style("top", d3.event.pageY - 75 + "px")
 	  	.style("display", "inline-block")
 		.html("Employer Name: <b>"+d.data.employer+"</b>"+ "<br>" + "Number of Employees: " +"<b>"+(d[1]-d[0]));    			
 		})
